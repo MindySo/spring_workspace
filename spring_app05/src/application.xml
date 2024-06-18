@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- NewYorkTime m = new NewYorkTime(); -->
+	<bean id="m" class="kr.co.jhta.app.NewYorkTime"></bean>
+
+	<!-- 
+	HelloImple h = new HelloImple();
+	h.setNewYorkTime(nt);
+	-->
+	
+	<bean id="h" class="kr.co.jhta.app.HelloImple">
+		<!-- 참조값이면 ref, 값이면 value -->
+		<property name="nt" ref="m"></property>
+	
+	</bean>
+	
+</beans>

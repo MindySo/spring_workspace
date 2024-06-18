@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- MachineCoffee mc = new MachineCoffee(); 와 같은 기능 -->
+	
+	<!-- 
+	<bean id="coffee" class="spring_app02.MachineCoffee">
+	
+		mc.setSnack("초코케이크");
+		<property name="cake" value="티라미수"></property>
+	
+	</bean>
+	 -->
+	
+	<bean id="coffee" class="spring_app02.HandDripCoffee">
+	
+		<!-- mc.setSnack("초코케이크"); -->
+		<property name="snack" value="와플"></property>
+	
+	</bean>
+	
+</beans>
